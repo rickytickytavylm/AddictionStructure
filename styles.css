@@ -40,6 +40,7 @@ body {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    color: var(--text-color);
 }
 
 .card:hover, .card:active {
@@ -74,11 +75,13 @@ body {
     max-width: var(--max-content-width);
     width: 100%;
     opacity: 0.95;
+    color: var(--text-color);
 }
 
 .back-button {
     background-color: var(--primary-color);
     transition: background-color 0.3s ease;
+    color: #6B46C1;
 }
 
 .back-button:hover {
@@ -109,6 +112,7 @@ body {
 
 .main-title {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #4B2E83; /* Dark purple for better contrast */
 }
 
 .description-text {
@@ -166,6 +170,7 @@ body {
 /* Typography */
 h1 {
     font-weight: 700;
+    color: #4B2E83; /* Dark purple for better contrast */
 }
 
 h2 {

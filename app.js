@@ -41,7 +41,7 @@ function addSubtitle() {
     
     // Main title
     const mainTitle = document.createElement('h2');
-    mainTitle.className = 'main-title text-2xl font-bold text-white mb-4 font-montserrat tracking-wide';
+    mainTitle.className = 'main-title text-2xl font-bold text-purple-900 mb-4 font-montserrat tracking-wide';
     mainTitle.textContent = 'Иллюзии зависимого';
     
     // Description text
@@ -151,7 +151,7 @@ function showIllusionDetail(id) {
     
     // Back button
     const backButton = document.createElement('button');
-    backButton.className = 'back-button mb-4 px-4 py-2 rounded-full text-white font-medium';
+    backButton.className = 'back-button mb-4 px-4 py-2 rounded-full text-purple-900 font-medium';
     backButton.textContent = '← К списку фраз';
     backButton.addEventListener('click', renderListView);
     
@@ -166,29 +166,29 @@ function showIllusionDetail(id) {
     
     // Mechanism section
     const mechanismTitle = document.createElement('h3');
-    mechanismTitle.className = 'section-title text-base mb-1';
+    mechanismTitle.className = 'section-title text-sm font-bold mb-2 text-indigo-700 border-b-2 border-indigo-400 pb-1';
     mechanismTitle.textContent = 'Механизм защиты:';
     
     const mechanismText = document.createElement('p');
-    mechanismText.className = 'text-base mb-4';
+    mechanismText.className = 'text-base text-gray-700 mb-4 pl-1';
     mechanismText.textContent = illusion.type;
     
     // Root fear section
     const fearTitle = document.createElement('h3');
-    fearTitle.className = 'section-title text-base mb-1';
+    fearTitle.className = 'section-title text-sm font-bold mb-2 text-purple-700 border-b-2 border-purple-400 pb-1';
     fearTitle.textContent = 'Корневой страх:';
     
     const fearText = document.createElement('p');
-    fearText.className = 'text-base mb-4';
+    fearText.className = 'text-base text-gray-700 mb-4 pl-1';
     fearText.textContent = illusion.rootFear;
     
     // Explanation section
     const explanationTitle = document.createElement('h3');
-    explanationTitle.className = 'section-title text-base mb-1';
+    explanationTitle.className = 'section-title text-sm font-bold mb-2 text-blue-700 border-b-2 border-blue-400 pb-1';
     explanationTitle.textContent = 'Объяснение:';
     
     const explanationText = document.createElement('p');
-    explanationText.className = 'text-base mb-2';
+    explanationText.className = 'text-base text-gray-700 mb-4 pl-1';
     explanationText.textContent = illusion.explanation;
     
     // Append all elements to the detail container
